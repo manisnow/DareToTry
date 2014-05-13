@@ -1,0 +1,18 @@
+<form name="myForm" ng-controller="TestController" ng-submit="nextQuestion()" >
+    <div class="header"><label>{{message}}</label></div>
+    <label>Total Question</label><label>:{{totalSize}}</label>
+    <label>::Answerd Question : </label><label>{{ind}}</label>
+    <div class="form-group">
+
+        <label for="Question">{{question.question}}</label>
+
+    </div>
+    <div class="input-control radio default-style" ng-repeat="option in question.questionOptions" >
+        <input type="radio"  name="answer" ng-model="answer" value="option.answer"> {{option.option}}{{option.answer}} <br/>
+    </div>
+    <label>{{list}}</label>
+    <button type="submit" class="btn btn-primary" ng-show="hidebutton">submit</button>
+
+
+
+</form>

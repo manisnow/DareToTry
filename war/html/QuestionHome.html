@@ -1,0 +1,12 @@
+
+<form name="myForm" ng-controller="MainController" ng-submit="challange()" >
+<div class="input-control radio default-style">
+  <input type="radio" ng-model="challange" ng-value="5"> Challange 5 Java Questions <br/>
+  <input type="radio" ng-model="challange" ng-value="10"> Challange 10 Java Questions <br/>
+  <input type="radio" ng-model="challange" ng-value="15"> Challange 15 Java Questions <br/>
+  
+  </div>
+  <tt>You are challnging {{challange | json}} Questions</tt><br/>
+  <button type="submit" class="btn btn-primary">Challange</button>
+ 
+ </form>

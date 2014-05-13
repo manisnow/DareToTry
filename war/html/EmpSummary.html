@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<div class="ng-scope ng-binding" ng-controller="EmpSummaryController">
+
+    <div class="navbar-text">
+        <b>Employee Summary:</b>
+        <table class="table table-striped">
+            <thead><td>
+                Employee ID
+            </td><td> First Name</td> <td> LastName</td><td>Salary</td><td>Email</td> </thead>
+
+        <tr  ng-repeat="emp in employees">
+            <td>{{emp.id}}</td>
+            <td>{{emp.firstName}}</td>
+            <td>{{emp.lastName}}</td>
+            <td>{{emp.salaryLevel}}</td>
+            <td>{{emp.email}}</td>
+            <td><button class="btn btn-danger"  ng-click="delete(emp.id);">Delete</button></td>
+         </tr>
+
+            </table>
+
+
+    </div>
+
+</div>
+</body>
+</html>

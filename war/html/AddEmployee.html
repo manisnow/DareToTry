@@ -1,0 +1,40 @@
+{{message}}
+<div  ng-controller="EmpController">
+
+<form role="form" ng-submit="submit()" name="empForm" >
+        <div class="form-group">
+        <label for="FirstName" >First Name</label>
+        <input type="text"  class="form-control" ng-model="newemp.firstName" id="firstName" placeholder="Enter First Name" required>
+      <small class="error"
+               ng-show="empForm.firstName.$error.required">
+            Your First name is required.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="LastName">LastName</label>
+        <input type="text"  class="form-control" ng-model="newemp.lastName" id="lastName" placeholder="Enter Last Name"  ng-maxlength=20 >
+
+        <small class="error"
+               ng-show="empForm.lastName.$error.required">
+            Your Last name is required
+        </small>
+    </div>
+
+
+    <div class="form-group">
+        <label for="salaryLevel">Salary</label>
+        <input type="text" class="form-control" ng-model="newemp.salaryLevel" id="salaryLevel" placeholder="Enter Your Sarlary">
+    </div>
+
+    <div class="form-group">
+        <label for="emailadd">Email</label>
+    <input class="form-control" type="email" name="email" ng-model="newemp.email" />
+    </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+
+
+</form>
+
+</div>
