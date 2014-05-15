@@ -2,79 +2,554 @@
 <questionBank>
 <question>
     <answerType>SINGLEANSWER</answerType>
-    <question>helllo2 </question>
+    <questionTag>
+        <line>Which four options describe the correct default values for array elements of the types indicated?</line>
+        <line> int -> 0</line>
+        <line> String -> "null"</line>
+        <line> Dog -> null</line>
+        <line> char -> '\u0000'</line>
+        <line> float -> 0.0f </line>
+        <line> boolean -> true</line> </questionTag>
     <questionOptions>
         <id>1</id>
-        <option>hello3</option>
-        <answer>true</answer>
+        <option>1, 2, 3, 4	</option>
+        <answer>false</answer>
     </questionOptions>
     <questionOptions>
           <id>2</id>
-        <option>hello5</option>
-        <answer>false</answer>
-    </questionOptions>
-</question>
-<question>
-    <answerType>SINGLEANSWER</answerType>
-    <question>helllo1 ? </question>
-    <questionOptions>
-         <id>1</id>
-        <option>hello3</option>
-        <answer>false</answer>
-    </questionOptions>
-    <questionOptions>
-       <id>2</id>
-        <option>hello7</option>
+        <option>1, 3, 4, 5</option>
         <answer>true</answer>
     </questionOptions>
-    
-</question>
-<question>
-    <answerType>SINGLEANSWER</answerType>
-    <question>helllo3 ? </question>
-    <questionOptions>
-        <id>1</id>
-        <option>hello3</option>
-        <answer>false</answer>
-    </questionOptions>
-    
-    <questionOptions>
-       <id>2</id>
-        <option>hello3</option>
-        <answer>true</answer>
-    </questionOptions>
-
-</question>
-<question>
-    <answerType>SINGLEANSWER</answerType>
-    <question>helllo1 4 ? </question>
-    <questionOptions>
-       <id>1</id>
-        <option>hello3</option>
-        <answer>true</answer>
-    </questionOptions>
-    
     <questionOptions>
         <id>2</id>
-        <option>hello3</option>
+        <option>2, 4, 5, 6</option>
         <answer>false</answer>
-   
-    </questionOptions>
-</question>
-<question>
-    <answerType>SINGLEANSWER</answerType>
-    <question>helllo6 ? </question>
-    <questionOptions>
-       <id>1</id>
-        <option>hello3</option>
-        <answer>false</answer>
-   
     </questionOptions>
     <questionOptions>
-       <id>2</id>
-        <option>hello3</option>
-        <answer>true</answer>
+        <id>2</id>
+        <option>3, 4, 5, 6</option>
+        <answer>false</answer>
     </questionOptions>
-   
 </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which one of these lists contains only Java programming language keywords?</line>
+            </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>class, if, void, long, Int, continue	</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>goto, instanceof, native, finally, default, throws</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>try, virtual, throw, final, volatile, transient</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>strictfp, constant, super, implements, do</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>5</id>
+            <option> byte, break, assert, switch, include</option>
+            <answer>false</answer>
+        </questionOptions>
+
+
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which will legally declare, construct, and initialize an array?</line>
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>int [] myList = {"1", "2", "3"};	</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>int [] myList = (5, 8, 2);</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>int myList [] [] = {4,9,7,0};</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>int myList [] = {4, 3, 7};</option>
+            <answer>true</answer>
+        </questionOptions>
+
+
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which is a reserved word in the Java programming language?</line>
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>method</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>native</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>subclasses</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>reference</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>5</id>
+            <option>array</option>
+            <answer>false</answer>
+        </questionOptions>
+
+
+
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which three are valid declarations of a char?</line>
+            <line>  char c1 = 064770;</line>
+            <line>  char c2 = 'face';</line>
+            <line>  char c3 = 0xbeef;</line>
+            <line>  char c4 = \u0022;</line>
+            <line>  char c5 = '\iface';</line>
+            <line>  char c6 = '\uface';</line>
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>1, 2, 4</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>1, 3, 6</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>3, 5</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>5 only</option>
+            <answer>false</answer>
+        </questionOptions>
+
+
+
+
+    </question>
+
+
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which is the valid declarations within an interface definition?</line>
+           
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>public double methoda();</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>public final double methoda();</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>static void methoda(double d1);</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>protected void methoda(double d1);</option>
+            <answer>false</answer>
+        </questionOptions>
+
+
+    </question>
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>What will be the output of the program?</line>
+            <line>  public class Test</line>
+            <line>  {</line>
+            <line>   public static void main(String[] args)</line>
+            <line>  {</line>
+            <line>   int x = 0;</line>
+            <line>    assert (x > 0) ? "assertion failed" : "assertion passed" ;</line>
+            <line>   System.out.println("finished");</line>
+            <line>   }</line>
+            <line>   }</line>
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>finished</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>Compiliation fails.</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>An AssertionError is thrown and finished is output.</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>An AssertionError is thrown with the message "assertion failed."</option>
+            <answer>false</answer>
+        </questionOptions>
+
+
+
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>What is the name of the method used to start a thread execution?</line>
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>init();</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>start();</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>run();</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>resume();</option>
+            <answer>false</answer>
+        </questionOptions>
+
+
+
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which two are valid constructors for Thread?</line>
+
+            <line>   Thread(Runnable r, String name)</line>
+            <line>   Thread()</line>
+            <line>   Thread(int priority)</line>
+            <line>   Thread(Runnable r, ThreadGroup g)</line>
+            <line>   Thread(Runnable r, int priority)</line>
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>1 and 3</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>2 and 4 </option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>1 and 2</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>2 and 5</option>
+            <answer>false</answer>
+        </questionOptions>
+
+
+
+    </question>
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which three are methods of the Object class?</line>
+            <line>  notify();</line>
+            <line>  notifyAll();</line>
+            <line>  isInterrupted();</line>
+            <line>  synchronized();</line>
+            <line>  interrupt();</line>
+            <line>  wait(long msecs);</line>
+            <line>  sleep(long msecs);</line>
+            <line>  yield();</line>
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>1, 2, 4</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>2, 4, 5 </option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>1, 2, 6</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>2, 3, 4</option>
+            <answer>false</answer>
+        </questionOptions>
+    </question>
+
+
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which cannot directly cause a thread to stop executing?</line>
+
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>Calling the SetPriority() method on a Thread object.</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>Calling the wait() method on an object.</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>3</id>
+            <option>Calling notify() method on an object.</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>Calling read() method on an InputStream object.</option>
+            <answer>false</answer>
+        </questionOptions>
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which class does not override the equals() and hashCode() methods, inheriting them directly from class Object?</line>
+
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>java.lang.String</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>java.lang.Double</option>
+            <answer>false</answer>
+        </questionOptions>
+
+        <questionOptions>
+            <id>3</id>
+            <option>java.lang.Character</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>java.lang.StringBuffer</option>
+            <answer>true</answer>
+        </questionOptions>
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which collection class allows you to grow or shrink its size and provides indexed access to its elements, but whose methods are not synchronized?</line>
+
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>java.util.HashSet</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>java.util.LinkedHashSet</option>
+            <answer>false</answer>
+        </questionOptions>
+
+        <questionOptions>
+            <id>3</id>
+            <option>java.util.List</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>java.util.ArrayList</option>
+            <answer>true</answer>
+        </questionOptions>
+    </question>
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>Which collection class allows you to grow or shrink its size and provides indexed
+                access to its elements, but whose methods are not synchronized?</line>
+
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>java.util.HashSet</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>java.util.LinkedHashSet</option>
+            <answer>false</answer>
+        </questionOptions>
+
+        <questionOptions>
+            <id>3</id>
+            <option>java.util.List</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>java.util.ArrayList</option>
+            <answer>true</answer>
+        </questionOptions>
+    </question>
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>You need to store elements in a collection that guarantees that no duplicates are stored
+                and all elements can be accessed in natural order. Which interface provides that capability?
+
+            </line>
+
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>java.util.Map</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>java.util.Set</option>
+            <answer>true</answer>
+        </questionOptions>
+
+        <questionOptions>
+            <id>3</id>
+            <option>java.util.List</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>java.util.Collection</option>
+            <answer>false</answer>
+        </questionOptions>
+    </question>
+
+
+    <question>
+        <answerType>SINGLEANSWER</answerType>
+        <questionTag>
+            <line>What will be the output of the program? </line>
+            <line> class Equals </line>
+            <line>   { </line>
+            <line>   public static void main(String [] args) </line>
+            <line>  { </line>
+            <line>  int x = 100; </line>
+            <line>  double y = 100.1; </line>
+            <line>  boolean b = (x = y); /* Line 7 */ </line>
+            <line>  System.out.println(b); </line>
+            <line>   } </line>
+            <line>  } </line>
+
+
+
+        </questionTag>
+        <questionOptions>
+            <id>1</id>
+            <option>true</option>
+            <answer>false</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>2</id>
+            <option>false</option>
+            <answer>false</answer>
+        </questionOptions>
+
+        <questionOptions>
+            <id>3</id>
+            <option>Compilation fails</option>
+            <answer>true</answer>
+        </questionOptions>
+        <questionOptions>
+            <id>4</id>
+            <option>An exception is thrown at runtime</option>
+            <answer>false</answer>
+        </questionOptions>
+    </question>
+
+
+
 </questionBank>

@@ -67,7 +67,7 @@ public class UTIL {
     	questionOptions[1].setAnswer(true);
     	question[0]=new Question();
     	question[0].setAnswerType(AnswerType.SINGLEANSWER);
-    	question[0].setQuestion("helllo ?");
+    	//question[0].setQuestion("helllo ?");
          
     	question[0].setQuestionOptions(questionOptions);
     	

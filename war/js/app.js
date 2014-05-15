@@ -5,11 +5,13 @@
 angular.module('app', ['app.services','app.controllers','ngRoute']).
     config(['$routeProvider', function($routeProvider) {
         $routeProvider.when("/JavaQuestHome", {
-            templateUrl: "/html/JavaQuestHome.html"
+            templateUrl: "/html/JavaQuestHome.html",
+            controller:'QuestionController'
 
         }).when("/TestPage",{
             
-            templateUrl: "/html/TestPage.html"
+            templateUrl: "/html/TestPage.html",
+            controller:'TestController'
         }).when("/EditEmp",{
             templateUrl: "/html/EditEmployee.html"
         });

@@ -1,13 +1,17 @@
-<!-- <form name="myForm" ng-controller="QuestionController" ng-submit="challangeQuestion()" > -->
-    <div  ng-controller="QuestionController" class="ng-scope ng-binding"></div>
+ <form name="myForm" ng-controller="QuestionController" ng-submit="challangeQuestion()" >
+  <!--  <div  ng-controller="QuestionController" class="ng-scope ng-binding"vng-submit=""></div> -->
     <div class="input-control radio default-style">
-        <input type="radio" ng-model="challange" ng-value="5"> Challange 5 Java Questions <br/>
-        <input type="radio" ng-model="challange" ng-value="10"> Challange 10 Java Questions <br/>
-        <input type="radio" ng-model="challange" ng-value="15"> Challange 15 Java Questions <br/>
+        <input type="radio" ng-model="challange" value=5> Challange 5 Java Questions <br/>
+        <input type="radio" ng-model="challange" value=10> Challange 10 Java Questions <br/>
+        <input type="radio" ng-model="challange" value=15> Challange 15 Java Questions <br/>
 
     </div>
-    <label class="head">You are challnging {{challange | json}} Questions</label><br/>
+    <label class="head">You are challnging {{challange}} Questions</label><br/>
    <!-- <button type="submit" class="btn btn-primary">Challange</button> -->
-        <a  href="#/TestPage" > Continue</a>
+
+
+<button type="submit" class="btn btn-primary" >submit</button>
+
+     </form>
 
 </div>

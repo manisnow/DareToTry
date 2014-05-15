@@ -1,16 +1,28 @@
 <form name="myForm" ng-controller="TestController" ng-submit="nextQuestion()" >
-    <div class="header"><label>{{message}}</label></div>
-    <label>Total Question</label><label>:{{totalSize}}</label>
+
+    <div class="header" align="center"><label>{{message}}</label></div>
+        <div align="middle"> <label>Total Question</label><label>:{{totalSize}}</label>
     <label>::Answerd Question : </label><label>{{ind}}</label>
-    <div class="form-group">
+    <label>   Correct  Answer: </label><label>{{correctAnswer}}</label>
+    <label>::Wrong  Answer: </label><label>{{wrongAnswer}}</label>
+        </div>
+    <div class="form-group" >
 
-        <label for="Question">{{question.question}}</label>
+    <pre ng-show="hidebutton">
+        <div class="Head" ng-repeat="line in question.questionTag.line" >{{line}}
+        </div>
+      </pre>
 
     </div>
-    <div class="input-control radio default-style" ng-repeat="option in question.questionOptions" >
-        <input type="radio"  name="answer" ng-model="answer" value="option.answer"> {{option.option}}{{option.answer}} <br/>
+    <div class="form-group" >
+    <div class="radio" ng-repeat="option in question.questionOptions" >
+        <label>
+        <input type="radio"  name="option" ng-model="formdata.option" ng-value="{{option}}">
+            {{option.option}}
+        </label>
     </div>
-    <label>{{list}}</label>
+    </div>
+
     <button type="submit" class="btn btn-primary" ng-show="hidebutton">submit</button>
 
 

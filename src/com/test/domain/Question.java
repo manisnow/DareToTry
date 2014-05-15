@@ -8,20 +8,20 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Question {
 	
-	String Question;
+	 QuestionTag questionTag;
 	QuestionOptions questionOptions[];
 	AnswerType answerType;
 	
 	public Question(){
 		
 	}
-	public String getQuestion() {
-		return Question;
+	public QuestionTag getQuestionTag() {
+		return questionTag;
 	}
 	
 	@XmlElement
-	public void setQuestion(String question) {
-		Question = question;
+	public void setQuestionTag(QuestionTag  questionTag) {
+		this.questionTag = questionTag;
 	}
 	public QuestionOptions[] getQuestionOptions() {
 		return questionOptions;
